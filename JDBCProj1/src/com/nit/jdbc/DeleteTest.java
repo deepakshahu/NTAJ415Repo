@@ -1,13 +1,13 @@
 //DeleteTest.java
 package com.nit.jdbc;
 
+/* Write a JDBC App to delete student records based given city name(sadd) */
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.Scanner;
-
-/* Write a JDBC App to delete student records based given city name(sadd) */
 
 public class DeleteTest {
 
