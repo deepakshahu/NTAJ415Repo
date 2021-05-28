@@ -34,27 +34,27 @@ public class UpdateTest {
 			//Convert input values as required for the SQL Query
 			newName="'"+newName+"'";  //gives 'Anil Rao'
 			newCity="'"+newCity+"'";  //gives 'Thane'
-			
+
 			//Register JDBC driver by loading JDBC driver class
 			//Class.forName("oracle:jdbc:driver:OracleDriver");
-			
+
 			//Establish the connection
 			con = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe","system","manager");
-			
+
 			//Create Statement object
 			if(con!=null)
 				st = con.createStatement();
-			
+
 			//Prepare SQL Query
 			//update student set sname='Anil Rao', sadd='Thane', avg=80.78 where sno=104;
 			String query = "UPDATE STUDENT SET SNAME="+	newName+", SADD="+newCity+", AVG="+newAvg+" WHERE SNO="+no;
 			System.out.println(query);
-			
+
 			//Send and execute SQL Query in DB s/w
 			int count=0;
 			if(st!=null)
 				count=st.executeUpdate(query);
-			
+
 			//Process the Result
 			if(count==0)
 				System.out.println("No records for updation");
@@ -64,7 +64,7 @@ public class UpdateTest {
 		catch(SQLException se) {
 			if(se.getErrorCode()>=900 && se.getErrorCode()<=999)
 				System.out.println("Invalid column name or table name or SQL keywords");
-				se.printStackTrace();
+			se.printStackTrace();
 		}
 		catch(Exception e) {
 			e.printStackTrace();

@@ -25,27 +25,27 @@ public class DeleteTest {
 			}
 			//Convert input values as required for the sql query
 			city="'"+city+"'"; //gives 'hyd'
-			
+
 			//Register JDBC driver by loading JDBC driver class
 			//Class.forName("oracle.jdbc.driver.OracleDriver");
-			
+
 			//Establish the connection
 			con = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe","system","manager");
-			
+
 			//Create Statement object
 			if(con!=null) 
 				st=con.createStatement();
-			
+
 			//Prepare SQL Query
 			//delete from student where sadd='HYD'
 			String query = "DELETE FROM STUDENT WHERE SADD="+city;
 			System.out.println(query);
-			
+
 			//Send and execute SQL Query in DB s/w
 			int count = 0;
 			if(st!=null) 
 				count = st.executeUpdate(query);
-			
+
 			//Process the Result
 			if(count==0)
 				System.out.println("No records found to delete");
