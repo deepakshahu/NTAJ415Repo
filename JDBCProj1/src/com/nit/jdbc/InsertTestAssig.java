@@ -1,6 +1,6 @@
 package com.nit.jdbc;
 
-/* Write a JDBC App to insert into EMP DB table only 4 columns(eno,ename,job,sal) by collecting from end user */
+/* Write a JDBC App to insert into the EMP DB table only 4 columns(eno,ename,job,sal) by collecting from the end user. */
 
 import java.sql.Connection;
 import java.sql.DriverManager;
