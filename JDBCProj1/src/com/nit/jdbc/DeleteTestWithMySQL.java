@@ -5,7 +5,6 @@ package com.nit.jdbc;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
-import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.Scanner;
@@ -16,7 +15,6 @@ public class DeleteTestWithMySQL {
 		Scanner sc=null;
 		Connection con=null;
 		Statement st = null;
-		ResultSet rs = null;
 		try {
 			//Read inputs
 			sc = new Scanner(System.in);
