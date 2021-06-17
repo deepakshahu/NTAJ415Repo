@@ -9,7 +9,7 @@ import java.sql.SQLException;
 import java.sql.Statement;
 
 public class OracleToMySQLDataTransferTest {
-	private static final String ORACLE_SELECT_STUDENT = "SELECT SNO,SNAME,SADD,AVG FROM STUDENT";
+	private static final String ORACLE_SELECT_STUDENT = "SELECT SNAME,SADD,AVG FROM STUDENT";
 	private static final String MYSQL_INSERT_STUDENT = "INSERT INTO STUDENT (SNAME,SADD,AVG) VALUES(?,?,?)";
 
 	public static void main(String[] args) {
@@ -40,10 +40,9 @@ public class OracleToMySQLDataTransferTest {
 			if(rs!=null && ps!=null) {
 				while(rs.next()) {
 					//gather each record from RS
-					int no = rs.getInt(1);
-					String name = rs.getString(2);
-					String addrs = rs.getString(3);
-					float avg = rs.getFloat(4);
+					String name = rs.getString(1);
+					String addrs = rs.getString(2);
+					float avg = rs.getFloat(3);
 					//set each record values as INSERT Query param values to insert to mySQL DB table
 					ps.setString(1, name);
 					ps.setString(2, addrs);
