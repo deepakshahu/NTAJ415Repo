@@ -9,5 +9,6 @@
 	<classpathentry kind="lib" path="C:/oraclexe/app/oracle/product/11.2.0/server/jdbc/lib/ojdbc6.jar"/>
 	<classpathentry kind="lib" path="D:/Workspaces/Advjava/NTAJ415/MySql JDBC Driver sw jar file/mysql-connector-java-8.0.25.jar"/>
 	<classpathentry kind="lib" path="D:/Workspaces/Advjava/NTAJ415/Apache Commons IO/commons-io-2.10.0.jar"/>
+	<classpathentry kind="lib" path="D:/Workspaces/Advjava/NTAJ415/PostgreSQL JDBC Driver/postgresql-42.2.22.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
