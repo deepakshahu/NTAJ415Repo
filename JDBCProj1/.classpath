@@ -10,5 +10,7 @@
 	<classpathentry kind="lib" path="D:/Workspaces/Advjava/NTAJ415/MySql JDBC Driver sw jar file/mysql-connector-java-8.0.25.jar"/>
 	<classpathentry kind="lib" path="D:/Workspaces/Advjava/NTAJ415/Apache Commons IO/commons-io-2.10.0.jar"/>
 	<classpathentry kind="lib" path="D:/Workspaces/Advjava/NTAJ415/PostgreSQL JDBC Driver/postgresql-42.2.22.jar"/>
+	<classpathentry kind="lib" path="C:/IDSServer/classes"/>
+	<classpathentry kind="lib" path="D:/Workspaces/Advjava/NTAJ415/Type5 JDBC Driver/oracle.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
